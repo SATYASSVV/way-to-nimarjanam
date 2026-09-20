@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    background-color: #0a0d18;
+    color: #f8fafc;
+    overflow: hidden;
+  }
+
+  h1, h2, h3, .font-devotional {
+    font-family: 'Cinzel', serif, system-ui;
+    letter-spacing: 0.05em;
+  }
+}
+
+.glass-panel {
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.glass-circle {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px rgba(249, 115, 22, 0.65), 0 0 50px rgba(236, 72, 153, 0.35);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #facc15 50%, #ca8a04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-saffron-gradient {
+  background: linear-gradient(135deg, #fed7aa 0%, #fb923c 50%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
